@@ -1,25 +1,30 @@
+:root {
+  --light: rgb(226, 226, 248);
+  --dark: rgba(0, 0, 0, 0.897);
+  --green: rgb(103, 209, 198);
+}
+
 body {
-  background-color: aliceblue;
   font-family: Helvetica, Arial, sans-serif;
-  background-color: rgb(226, 226, 248);
+  background-color: var(--light);
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.897);
+  background-color: var(--dark);
   padding: 10px;
   padding-bottom: 27px;
   padding-left: 0;
 }
 
 h1 {
-  background-color: rgb(103, 209, 198);
+  background-color: var(--green);
   position: absolute;
   width: 30%;
   height: 5%;
   text-align: right;
-  font-weight: 700;
-  padding-top: 11px;
-  padding-bottom: 14px;
+  font-weight: 600;
+  padding-top: 9px;
+  padding-bottom: 0px;
   padding-right: 15px;
   border-radius: 0px 2px 2px 0;
   font-size: 30px;
@@ -29,21 +34,21 @@ h1 {
 
 h2 {
   font-size: 25px;
-  background-color: rgb(103, 209, 198);
+  background-color: var(--green);
   position: absolute;
   box-sizing: border-box;
   right: 44px;
-  top: 226px;
+  top: 220px;
   padding: 4px;
   border-radius: 2px;
 }
 
 .a-tag-header {
   font-size: 12px;
-  color: rgb(103, 209, 198);
+  color: var(--green);
   text-decoration: none;
   margin: 5px;
-  border-bottom: solid 2px rgb(103, 209, 198);
+  border-bottom: solid 2px var(--green);
   padding-bottom: 2px;
 }
 
@@ -61,6 +66,8 @@ nav {
 #computer {
   width: 100vw;
   height: 200px;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 #about-me-container {
@@ -81,4 +88,36 @@ p {
   margin-top: 20px;
   padding-left: 20px;
   font-size: 12px;
+  line-height: 1.5;
+}
+
+#work-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+#image-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-left: ;
+}
+
+.thumbnails {
+  border: 2px solid var(--green);
+  height: 100px;
+  width: 500px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#contact-me-container {
+  display: flex;
+}
+
+#footer-menu {
+  display: flex;
+  justify-content: space-around;
 }
