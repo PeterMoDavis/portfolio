@@ -23,11 +23,11 @@ header {
   justify-content: space-between;
 }
 
-header img {
+#peter {
   width: 200px;
   border-radius: 100%;
   position: absolute;
-  margin-top: 60px;
+  margin-top: 0;
   margin-left: 20px;
 }
 
@@ -45,6 +45,7 @@ h1 {
   font-size: 2em;
   text-transform: uppercase;
   color: var(--dark);
+  flex: 0 0 20%;
 }
 
 h2 {
@@ -78,6 +79,7 @@ nav {
   padding-bottom: 0px;
   display: flex;
   justify-content: center;
+  flex: 0 0 171%;
 }
 /* image */
 #computer {
