@@ -2,6 +2,7 @@
   --light: rgb(226, 226, 248);
   --dark: rgba(0, 0, 0, 0.897);
   --green: rgb(103, 209, 198);
+  --blue: rgb(9, 9, 59);
 }
 
 body {
@@ -14,12 +15,14 @@ header {
   padding: 10px;
   padding-bottom: 27px;
   padding-left: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 h1 {
   background-color: var(--green);
   position: absolute;
-  width: 30%;
+  width: 312px;
   height: 5%;
   text-align: right;
   font-weight: 600;
@@ -27,9 +30,9 @@ h1 {
   padding-bottom: 0px;
   padding-right: 15px;
   border-radius: 0px 2px 2px 0;
-  font-size: 30px;
+  font-size: 2em;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.897);
+  color: var(--dark);
 }
 
 h2 {
@@ -61,6 +64,8 @@ nav #header-nav {
 nav {
   padding-top: 17px;
   padding-bottom: 0px;
+  display: flex;
+  justify-content: center;
 }
 /* image */
 #computer {
@@ -82,8 +87,8 @@ h3 {
 }
 
 p {
-  margin-right: 40px;
-  border-left: solid 3px navy;
+  margin-right: 60px;
+  border-left: solid 2px var(--blue);
   margin-left: 10px;
   margin-top: 20px;
   padding-left: 20px;
@@ -100,24 +105,121 @@ p {
   display: flex;
   flex-wrap: wrap;
   padding-left: 20px;
-  margin-left: 10px;
+  margin-left: 24px;
   margin-top: 10px;
-  border-left: ;
+  margin-right: 60px;
+  border-left: solid 2px var(--blue);
+}
+
+#forest-image {
+  width: 98.7%;
+  height: 400px;
+  border: 2px solid var(--green);
+  overflow: hidden;
+  object-fit: cover;
+  margin-left: 3px;
 }
 
 .thumbnails {
   border: 2px solid var(--green);
   height: 100px;
-  width: 500px;
+  /* width: 500px; */
   overflow: hidden;
   object-fit: cover;
+  margin: 3px;
+  width: 48.7%;
 }
 
 #contact-me-container {
   display: flex;
+  margin-top: 20px;
+}
+
+footer h4 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px 66px 60px 20px;
 }
 
 #footer-menu {
+  width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-around;
+  border-left: solid var(--blue) 2px;
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.footer-links {
+  text-decoration: none;
+  font-size: 12px;
+  color: var(--dark);
+  border-bottom: solid 2px var(--blue);
+}
+
+@media screen and (max-width: 1050px) {
+  .thumbnails {
+    width: 98.7%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about-me-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #work-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  p {
+    border-left: none;
+    padding: none;
+  }
+
+  #image-container {
+    border-left: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #forest-image {
+    margin: 0;
+  }
+
+  h3 {
+    border-bottom: solid 2px var(--blue);
+    margin-left: 0;
+  }
+
+  footer h4 {
+    text-align: center;
+  }
+
+  #contact-me-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  nav #header-nav {
+    justify-content: center;
+    margin-top: 55px;
+  }
+
+  header {
+    height: 100px;
+    justify-content: center;
+  }
+
+  /* h1 {
+    text-align: center;
+    left: 128px;
+    border-radius: 2px;
+    padding: 0;
+    top: 20px;
+  } */
 }
