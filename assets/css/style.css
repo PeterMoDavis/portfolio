@@ -163,6 +163,8 @@ p {
 
 .work-images:hover {
   filter: grayscale(0);
+  box-shadow: var(--green) 0px 0px 20px;
+  width: 99%;
 }
 
 figcaption {
