@@ -47,6 +47,7 @@ h1 {
   text-transform: uppercase;
   color: var(--dark);
   flex: 0 0 20%;
+  box-shadow: var(--green) 0px 0px 20px;
 }
 
 h2 {
@@ -59,6 +60,7 @@ h2 {
   top: 220px;
   padding: 4px;
   border-radius: 2px;
+  box-shadow: var(--green) 0px 0px 20px;
 }
 
 .a-tag-header {
@@ -230,6 +232,9 @@ footer h4 {
 }
 
 @media screen and (max-width: 768px) {
+  nav {
+    flex: 0 0 160%;
+  }
   #header-image {
     margin-left: 0px;
     margin-top: 127px;
@@ -270,7 +275,8 @@ footer h4 {
 
   footer h4 {
     text-align: center;
-    margin: 30px 0;
+    margin-bottom: 50px;
+    border-bottom: solid 2px var(--peach);
   }
 
   #contact-me-container {
