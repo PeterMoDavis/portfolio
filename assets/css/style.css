@@ -149,7 +149,6 @@ p {
 
 .work-images:hover {
   filter: grayscale(0);
-  height: 105px;
 }
 
 #contact-me-container {
