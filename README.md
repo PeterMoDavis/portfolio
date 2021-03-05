@@ -6,6 +6,8 @@
 
 For this project I wanted to begin my journey building a fantastic personal portfolio. I hope to use it in the future to gain employment as a web developer. Hopefully this will be of use to me when applying for jobs and showing prospective employers my projects and accomplishments. While working on it I learned a great deal about CSS including using Flexbox, utilizing the inspector, and how to work under pressure/manage my workflow.
 
+See Application [HERE](https://petermodavis.github.io/portfolio/)
+
 ## Usage
 
 To use this app you just have to click the top links and the screen will scroll to the proper section. If you click on one of the work images it will take you to that project. When hovering over the images, they will begin to glow.
