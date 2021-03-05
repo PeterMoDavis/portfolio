@@ -183,6 +183,7 @@ figcaption {
   text-align: left;
   line-height: 59px;
   min-width: 105px;
+  max-height: 55px;
 }
 
 #contact-me-container {
