@@ -300,8 +300,18 @@ footer h4 {
     margin-top: 55px;
   }
 
+  #footer-menu {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-links {
+    margin-bottom: 20px;
+  }
+
   header {
     height: 100px;
     justify-content: center;
+    align-content: space-between;
   }
 }
