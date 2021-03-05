@@ -48,6 +48,8 @@ h1 {
   color: var(--dark);
   flex: 0 0 20%;
   box-shadow: var(--green) 0px 0px 20px;
+  max-height: 31px;
+  min-height: 31px;
 }
 
 h2 {
